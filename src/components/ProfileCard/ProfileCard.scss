@@ -1,0 +1,54 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+
+    &_pic {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+    }
+
+    &_name {
+        font-size: 20px;
+    }
+
+    &_btn {
+        height: 25px;
+        width: 100px;
+        margin-top: 15px;
+    }
+
+    &_btn:focus {     
+        background-color:rgb(111, 188, 111);    
+    }
+}
+
+.follow {
+    display: flex;
+    justify-content: space-around;
+
+    &_p {
+        font-size: 12px;
+    }
+}
+
+.insta_pic {
+    height: 250px;
+    width: 250px;
+}
+
+.column{
+    margin-top: 20px;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}

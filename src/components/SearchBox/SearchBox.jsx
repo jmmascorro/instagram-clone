@@ -1,17 +1,16 @@
 import "./SearchBox.scss";
 
-const SearchBox = () => {
+const SearchBox = (props) => {
     // const { label, searchTerm, handleInput } = props;
     // const capitalizedLabel = label[0].toUpperCase() + label.slice(1);
+    const { searchTerm, handleInput } = props; 
 
     return (
-        <form className="search-box">
-            <input
-            type="text"
-            name="search"
-            placeholder="Search"
-            className="search-box_input"
-            />
+        <form className="search-box" name="form">
+            <label className="search-box__label"></label>
+            <input type="text" placeholder="Search Profile"
+            value={searchTerm} onInput={handleInput} 
+            className="search-box__input"/>
         </form>
     )
 }

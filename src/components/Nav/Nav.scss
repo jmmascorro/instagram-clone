@@ -1,6 +1,12 @@
 .nav {
     display: flex;
     justify-content: space-around;
+    border-bottom: 2px rgb(179, 179, 179) solid;
+    height: 60px;
+
+    &_icon {
+        align-self: center;
+    }
 
     &_img {
         display: flex;
